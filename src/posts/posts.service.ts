@@ -15,14 +15,14 @@ export class PostsService {
     },
   ];
 
-  allPosts(): IPost[] {
-    return this.posts;
-  }
+  // allPosts(): IPost[] {
+  //   return this.posts;
+  // }
 
-  insertPost(title: string, content: string): IPost[] {
-    // console.log('title: ', title)
-    const newPost: IPost = new Post(title, content);
-    this.posts.push(newPost);
-    return this.posts;
-  }
+  // insertPost(title: string, content: string): IPost[] {
+  //   // console.log('title: ', title)
+  //   const newPost: IPost = new Post(title, content);
+  //   this.posts.push(newPost);
+  //   return this.posts;
+  // }
 }

@@ -6,16 +6,16 @@ import { IPost } from './interfaces';
 export class PostsController {
   constructor(private readonly postsService: PostsService) {}
 
-  @Get()
-  getPosts(): IPost[] {
-    return this.postsService.allPosts();
-  }
+  // @Get()
+  // getPosts(): IPost[] {
+  //   return this.postsService.allPosts();
+  // }
 
-  @Post()
-  addPost(
-    @Body('title') title: string,
-    @Body('content') content: string,
-  ): IPost[] {
-    return this.postsService.insertPost(title, content);
-  }
+  // @Post()
+  // addPost(
+  //   @Body('title') title: string,
+  //   @Body('content') content: string,
+  // ): IPost[] {
+  //   return this.postsService.insertPost(title, content);
+  // }
 }

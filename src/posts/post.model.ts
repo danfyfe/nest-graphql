@@ -1,6 +1,11 @@
+// import { Entity } from 'typeorm';
+import { ObjectType, Field } from '@nestjs/graphql';
+
+@ObjectType()
 export class Post {
-  constructor(
-    public title: string,
-    public content: string,
-  ) {}
+  @Field(() => String)
+  title: string;
+
+  @Field(() => String)
+  content: string;
 }
